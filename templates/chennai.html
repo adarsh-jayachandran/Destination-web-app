@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chennai</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #ff9a8b, #ff6a88, #ff99ac);
+            color: #333;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #d81b60; /* South Indian rose pink */
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header span {
+            color: #ffd700; /* Golden color symbolizing Chennai's temples and culture */
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #d81b60;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Button */
+        .content a {
+            display: inline-block;
+            text-decoration: none;
+            background: #d81b60;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .content a:hover {
+            background: #ad1457;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        Welcome to <span>Chennai</span>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+        <a href="{% url 'destination_detail' dest.id %}">
+            <img src="{{ dest.img.url }}" alt="Chennai">
+        </a>
+        <h2>Discover Chennai</h2>
+        <p>
+            Chennai, the cultural capital of South India, is known for its classical music, stunning temples, and Marina Beach, one of the longest urban beaches in the world. It’s a city that perfectly blends tradition with modernity.
+        </p>
+        <p>
+            Experience the warmth of South Indian hospitality, savor delicious local dishes like dosa and filter coffee, and explore iconic landmarks like Kapaleeshwarar Temple, Fort St. George, and the Government Museum.
+        </p>
+        <a href=https://en.wikipedia.org/wiki/Chennai>Learn More About Chennai</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Powered by <a href="https://www.example.com">Travel Guide</a>. Explore more destinations!</p>
+    </footer>
+</body>
+</html>

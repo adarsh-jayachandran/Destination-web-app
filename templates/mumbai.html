@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mumbai</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #ffb347, #ffcc33);
+            color: #333;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #ff5e57;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header span {
+            color: #ffd700; /* Golden color inspired by Mumbai's vibrant culture */
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #ff5e57;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Button */
+        .content a {
+            display: inline-block;
+            text-decoration: none;
+            background: #ff5e57;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .content a:hover {
+            background: #ff3b3b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        Welcome to <span>Mumbai</span>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+        <a href="{% url 'destination_detail' dest.id %}">
+            <img src="{{ dest.img.url }}" alt="Mumbai">
+        </a>
+        <h2>Discover Mumbai</h2>
+        <p>
+            Mumbai, the bustling financial capital of India, is a city that never sleeps. Known for its iconic landmarks like the Gateway of India, Marine Drive, and the Chhatrapati Shivaji Maharaj Terminus, it combines a rich cultural heritage with a modern cosmopolitan vibe.
+        </p>
+        <p>
+            From the glamorous world of Bollywood to the vibrant street food culture of vada pav and pav bhaji, Mumbai offers an unforgettable experience. Explore its beaches, historical monuments, and bustling markets like Colaba Causeway and Crawford Market.
+        </p>
+        <a href=https://en.wikipedia.org/wiki/Mumbai>Learn More About Mumbai</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Powered by <a href="https://www.example.com">Travel Guide</a>. Explore more destinations!</p>
+    </footer>
+</body>
+</html>
